@@ -1,0 +1,62 @@
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5.625rem;
+    width: 100%;
+    background: var(--color-light);
+}
+
+nav {
+    height: inherit;
+    line-height: 5.625rem;
+    width: 100%;
+    padding: 0 3rem;
+}
+
+ul {
+    display: grid;
+    height: inherit;
+    grid-template-columns: repeat(3, 1fr) 8fr repeat(3, 1fr);
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header a,
+header a:hover,
+header a:focus,
+header a:active,
+header a:visited {
+    text-decoration: none;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--color-charcoal);
+    font-size: var(--font-body);
+    font-weight: 300;
+}
+
+.header-logo {
+    display: inline-block;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.header-logo img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
