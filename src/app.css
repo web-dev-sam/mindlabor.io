@@ -40,28 +40,42 @@ html, body {
     margin: 0;
 }
 
+main {
+    margin-top: var(--header-height);
+}
+
 h1 {
     font-size: var(--font-title-1);
+    height: var(--font-title-1);
+    line-height: var(--font-title-1);
     font-weight: 700;
 }
 
 h2 {
     font-size: var(--font-title-2);
+    height: var(--font-title-2);
+    line-height: var(--font-title-2);
     font-weight: 700;
 }
 
 h3 {
     font-size: var(--font-title-3);
+    height: var(--font-title-3);
+    line-height: var(--font-title-3);
     font-weight: 700;
 }
 
 div.subtitle {
     display: inline;
     font-size: var(--font-subtitle);
+    height: var(--font-subtitle);
+    line-height: var(--font-subtitle);
 }
 
 small {
     font-size: var(--font-body-small);
+    height: var(--font-small);
+    line-height: var(--font-small);
     line-height: 140%;
     letter-spacing: 0.5px;
     font-weight: 300;
@@ -69,6 +83,8 @@ small {
 
 button {
     font-size: var(--font-button);
+    height: var(--font-button);
+    line-height: var(--font-button);
     letter-spacing: 0.5px;
     padding: 0.5rem 2rem;
     width: 10rem;
@@ -84,6 +100,8 @@ button:hover {
 div.pretitle {
     display: inline;
     font-size: var(--font-pretitle);
+    height: var(--font-pretitle);
+    line-height: var(--font-pretitle);
     font-weight: 600;
     letter-spacing: 0.5px;
 }
@@ -109,7 +127,25 @@ a:hover {
     text-decoration: dotted underline;
 }
 
-p, a {
+.float-hover,
+.float-hover-right,
+.float-hover-scale {
+    transition: transform 0.2s ease;
+}
+
+.float-hover:hover {
+    transform: translateY(-0.1rem);
+}
+
+.float-hover-right:hover {
+    transform: translateX(0.1rem);
+}
+
+.float-hover-scale:hover {
+    transform: scale(1.05);
+}
+
+p, a, span {
     font-size: var(--font-body);
     line-height: 140%;
     letter-spacing: 0.5px;
@@ -121,8 +157,11 @@ button.btn-primary {
 }
 
 button.btn-secondary {
-    background-color: var(--color-wild-sand);
+    background-color: white;
     color: var(--color-charcoal-medium);
     border: 1px solid var(--color-charcoal-medium);
 }
 
+button.btn-secondary:hover {
+    background-color: var(--color-wild-sand);
+}

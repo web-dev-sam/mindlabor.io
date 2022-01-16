@@ -8,20 +8,18 @@
 </script>
 
 <svelte:head>
+	<script src="https://kit.fontawesome.com/157f63bc72.js" crossorigin="anonymous"></script>
 	<title>MindLabor</title>
 </svelte:head>
 
-<hero></hero>
-
 <section id="hero">
-	<img src="./assets/index/hero.svg" width=100% alt="Abstract lines background" />
 	<div class="hero-header">
 		<h1>Samuel Braun</h1>
 		<h2>Web Developer & Designer</h2>
 	</div>
 </section>
 
-<section>
+<section class="page-section">
 
 	<h2>AI of the future</h2>
 	<p>Analyze text to extract meta-data from content such as concepts, entities,
@@ -39,7 +37,7 @@
 		emotion, relations, sentiment and more. Analyze text to extract meta-data from content such as concepts, entities,
 		emotion, relations, sentiment and more. Analyze text to extract.
 	   
-	   <a>Meta-data</a> from content such as concepts, entities,
+	   <a href="">Meta-data</a> from content such as concepts, entities,
 		emotion, relations, sentiment and more. Analyze text to extract meta-data from content such as concepts, entities,
 		emotion, relations, sentiment and more. </p>
 

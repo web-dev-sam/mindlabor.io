@@ -1,16 +1,13 @@
 
 #hero {
-    height: 75vh;
+    height: 50vh;
     color: var(--color-light);
-}
-
-#hero img {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: -2;
+    overflow: hidden;
+    background-image: url('/assets/index/hero.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 #hero h1,
@@ -24,8 +21,6 @@
 }
 
 #hero h2 {
-    margin: auto;
-    text-align: center;
     height: 3rem;
     line-height: 3rem;
     font-weight: 100;
@@ -36,4 +31,10 @@
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.page-section {
+    width: 50%;
+    margin: 12rem auto;
+    background: var(--color-light);
 }

@@ -1,0 +1,75 @@
+
+html {
+    --footer-height: 22.5rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    height: var(--footer-height);
+    width: 100%;
+    background: var(--color-light);
+    background-image: url('/footer.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+footer > div {
+    padding: 5rem 1rem;
+}
+
+footer > div * {
+    display: block;
+}
+
+footer a,
+footer a:hover,
+footer a:focus,
+footer a:active,
+footer a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--color-charcoal);
+    font-size: var(--font-body);
+}
+
+footer a:hover {
+    text-decoration: dotted underline;
+}
+
+footer i {
+    font-size: calc(var(--font-body) * 1.5);
+    line-height: calc(var(--font-body) * 1.5);
+}
+
+.footer-socials {
+    display: grid;
+    height: inherit;
+    width: 100%;
+    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.footer-socials > div {
+    display: inline-block;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-me > h2 {
+    margin-top: 5rem;
+    margin-bottom: 0;
+}
+
+.footer-me > p {
+    margin-top: 0;
+}

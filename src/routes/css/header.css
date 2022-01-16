@@ -1,17 +1,21 @@
 
+html {
+    --header-height: 5.625rem;
+}
+
 header {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    height: 5.625rem;
+    height: var(--header-height);
     width: 100%;
     background: var(--color-light);
 }
 
 nav {
     height: inherit;
-    line-height: 5.625rem;
+    line-height: var(--header-height);
     width: 100%;
     padding: 0 3rem;
 }
@@ -32,6 +36,10 @@ li {
     text-align: center;
 }
 
+li.active {
+    font-weight: 700;
+}
+
 header a,
 header a:hover,
 header a:focus,
@@ -44,7 +52,6 @@ header a {
     text-decoration: none;
     color: var(--color-charcoal);
     font-size: var(--font-body);
-    font-weight: 300;
 }
 
 .header-logo {
