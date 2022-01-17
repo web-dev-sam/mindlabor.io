@@ -35,7 +35,7 @@
 		emotion, relations, sentiment and more. Analyze text to extract meta-data from content such as concepts, entities,
 		emotion, relations, sentiment and more. Analyze text to extract.
 	   
-	   <a href="">Meta-data</a> from content such as concepts, entities,
+	    Meta-data from content such as concepts, entities,
 		emotion, relations, sentiment and more. Analyze text to extract meta-data from content such as concepts, entities,
 		emotion, relations, sentiment and more. </p>
 

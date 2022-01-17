@@ -66,4 +66,6 @@ header a {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    width: 3.5rem;
+    height: 3.5rem;
 }

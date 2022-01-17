@@ -1,5 +1,5 @@
 
 <svelte:head>
-	<title>About</title>
+	<title>Resume</title>
 </svelte:head>
 
