@@ -4,11 +4,9 @@
 
 <script lang="ts">
 	import '../routes/css/index.css';
-
 </script>
 
 <svelte:head>
-	<script src="https://kit.fontawesome.com/157f63bc72.js" crossorigin="anonymous"></script>
 	<title>MindLabor</title>
 </svelte:head>
 
@@ -28,7 +26,7 @@
 	<h3>Natural Language Classifier</h3>
 	<p>Natural Language Classifier uses advanced natural language processing and
 		machine learning techniques to create custom classification models. Users train their data and the service predicts the appropriate category for the
-		inputted text. <small>(Lissy ist cool)</small></p>
+		inputted text.</p>
 
 	<h3>Natural Language Understanding</h3>
 	<p>Analyze text to extract meta-data from content such as concepts, entities,
