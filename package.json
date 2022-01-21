@@ -9,7 +9,13 @@
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
-    "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
+    "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
+    "test": "jest --config jest.config.js",
+    "test:watch": "jest --config jest.config.js --watch",
+    "test:coverage": "jest --config jest.config.js --coverage",
+    "sonar": "npm run sonar:start && npm run sonar:scan",
+    "sonar:start": "StartSonar.bat",
+    "sonar:scan": "./sq-scanner.bat"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
