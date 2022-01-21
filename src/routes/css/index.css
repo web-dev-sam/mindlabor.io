@@ -2,7 +2,6 @@
 #hero {
     height: 50vh;
     color: var(--color-light);
-    overflow: hidden;
     background-image: url('/assets/index/hero.svg');
     background-size: cover;
     background-position: center;
