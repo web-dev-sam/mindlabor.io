@@ -10,7 +10,8 @@
             <ul>
                 <li class:active={$page.url.pathname === '/'}>
                     <a sveltekit:prefetch class="header-logo" href="/">
-                        <img src="/logo.svg" alt="MindLabor Logo">
+                        <img src="/logo.svg" alt="MindLabor Logo" class="logo">
+                        <img src="/logo.svg" alt="MindLabor Logo" class="logo-shadow">
                     </a>
                 </li>
                 <li></li>
@@ -25,7 +26,8 @@
             <ul>
                 <li class:active={$page.url.pathname === '/'}>
                     <a sveltekit:prefetch class="header-logo" href="/">
-                        <img src="/logo.svg" alt="MindLabor Logo">
+                        <img src="/logo.svg" alt="MindLabor Logo" class="logo">
+                        <img src="/logo.svg" alt="MindLabor Logo" class="logo-shadow">
                     </a>
                 </li>
                 <li></li>

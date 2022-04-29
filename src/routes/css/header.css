@@ -1,5 +1,5 @@
 :root {
-    --header-height: 5.625rem;
+    --header-height: 100px;
 }
 
 header.default-header {
@@ -78,10 +78,15 @@ header a {
     text-align: center;
 }
 
-.header-logo img {
+.logo {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
     width: 3rem;
     height: 3rem;
+}
+
+.logo-shadow {
+    opacity: 0.025;
+    transform: scale(3.5) translate(-13px, 7px) !important;
 }
