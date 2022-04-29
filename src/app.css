@@ -1,20 +1,8 @@
 
 :root {
-    --color-charcoal: #021424;
-    --color-charcoal-medium: #3F4C58;
-    --color-charcoal-light: #6C767F;
-    --color-wild-sand: #F5F5F5;
-    --color-orchid: #E045D0;
-    --color-tango: #E87B3E;
-    --color-viola: #671DFD;
-    --color-primary-gradient: linear-gradient(
-        158deg, 
-        var(--color-viola) 0%, 
-        var(--color-orchid) 50%, 
-        var(--color-tango) 100%
-    );
-    --color-dark: var(--color-charcoal);
-    --color-light: white;
+    --color-primary: #8338FA;
+    --color-light: #F9F5FF;
+    --color-dark: #0E1F34;
 
     --font-title-1: 4.25rem;
     --font-title-2: 2.625rem;
@@ -28,7 +16,7 @@
 
 * {
     box-sizing: border-box;
-    font-family: "Catamaran", sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 html, body {
@@ -48,21 +36,21 @@ h1 {
     font-size: var(--font-title-1);
     height: var(--font-title-1);
     line-height: var(--font-title-1);
-    font-weight: 700;
+    font-weight: 300;
 }
 
 h2 {
     font-size: var(--font-title-2);
     height: var(--font-title-2);
     line-height: var(--font-title-2);
-    font-weight: 700;
+    font-weight: 300;
 }
 
 h3 {
     font-size: var(--font-title-3);
     height: var(--font-title-3);
     line-height: var(--font-title-3);
-    font-weight: 700;
+    font-weight: 300;
 }
 
 div.subtitle {
@@ -83,17 +71,19 @@ small {
 
 button {
     font-size: var(--font-button);
-    height: var(--font-button);
+    height: calc(var(--font-button) * 3);
     line-height: var(--font-button);
     letter-spacing: 0.5px;
     padding: 0.5rem 2rem;
     width: 10rem;
     border: none;
     cursor: pointer;
+    background-color: var(--color-primary);
+    color: white;
 }
 
 button:hover {
-    opacity: 0.9;
+    opacity: 0.92;
 }
 
 div.pretitle {

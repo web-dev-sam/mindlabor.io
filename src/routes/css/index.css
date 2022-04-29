@@ -1,39 +1,158 @@
 
+html {
+    font-size: 20px !important;
+}
+
+main {
+    --footer-header-height: calc(var(--header-height) + var(--footer-height));
+    min-height: calc(100vh - var(--footer-header-height));
+}
+
 #hero {
-    height: 50vh;
-    color: var(--color-light);
-    background-image: url('/assets/index/hero.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    overflow: hidden;
+    position: absolute;
+    top: 25vh;
+    left: 14%;
 }
 
-#hero h1,
-#hero h2 {
-    margin: auto;
-    text-align: center;
-    height: 5rem;
-    line-height: 5rem;
-    font-weight: 600;
-    font-size: 5rem;
+#hero > h1 {
+    height: 200%;
+    margin: 0;
 }
 
-#hero h2 {
-    height: 3rem;
-    line-height: 3rem;
-    font-weight: 100;
-    font-size: 2rem;
+#about {
+    position: absolute;
+    width: 20%;
+    top: 110vh;
+    right: 16%;
 }
 
-.hero-header {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+#about > p {
+    max-width: 500px;
 }
 
-.page-section {
-    width: 50%;
-    margin: 12rem auto;
-    background: var(--color-light);
+
+
+.bbox {
+    width: 100%;
+    height: 197vh;
+}
+
+.purple-bbox-r,
+.purple-bbox-l {
+    position: absolute;
+    background-color: var(--color-primary);
+}
+
+.grey-bbox-1,
+.grey-bbox-2,
+.grey-bbox-3,
+.grey-bbox-4 {
+    position: absolute;
+    background-color: var(--color-light);
+}
+
+.purple-bbox-r {
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 80vh;
+}
+
+.grey-bbox-1 {
+    top: 0;
+    right: 0;
+    width: 48%;
+    height: 76vh;
+}
+
+.grey-bbox-2 {
+    top: 76vh;
+    right: 0;
+    width: 100%;
+    height: 18vh;
+}
+
+.purple-bbox-l {
+    top: 98vh;
+    left: 0;
+    width: 40%;
+    height: 80vh;
+}
+
+.grey-bbox-3 {
+    top: 94vh;
+    left: 0;
+    width: 48%;
+    height: 80vh;
+}
+
+.grey-bbox-4 {
+    top: 174vh;
+    left: 0;
+    width: 100%;
+    height: 30vh;
+}
+
+[class^="shape-"] {
+    position: absolute;
+    z-index: 2;
+}
+
+.shape-1 {
+    top: 32vh;
+    right: 5%;
+}
+
+.shape-2 {
+    top: 7vh;
+    right: 14%;
+}
+
+.shape-3 {
+    top: 60vh;
+    right: 23.5%;
+}
+
+.shape-4 {
+    top: 75vh;
+    left: 3%;
+}
+
+.shape-5 {
+    top: 115vh;
+    left: 5%;
+}
+
+.shape-6 {
+    top: 154vh;
+    left: 14%;
+}
+
+.shape-7 {
+    top: 170vh;
+    left: 50%;
+}
+
+.shape-8 {
+    top: 170vh;
+    right: 4%;
+}
+
+@media screen and (max-width: 1480px) {
+
+    .shape-7 {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 1440px) {
+
+    html {
+        font-size: 18px !important;
+    }
+
+    .bbox {
+        display: none;
+    }
 }

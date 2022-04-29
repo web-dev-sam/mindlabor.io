@@ -7,9 +7,8 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
     height: var(--header-height);
-    width: 100%;
+    width: 52%;
     background: white;
 }
 

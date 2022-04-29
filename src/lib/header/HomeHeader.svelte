@@ -1,6 +1,6 @@
 <script lang="ts">
     import { page } from '$app/stores';
-    import '../../routes/css/header.css';
+    import '../../routes/css/home-header.css';
 </script>
 
 <header>
@@ -12,7 +12,6 @@
                 </a>
             </li>
             <li></li>
-            <li class:active={$page.url.pathname === '/'} class="float-hover"><a sveltekit:prefetch href="/">Home</a></li>
             <li class:active={$page.url.pathname === '/blog'} class="float-hover"><a sveltekit:prefetch href="/blog">Blog</a></li>
             <li class:active={$page.url.pathname === '/about'} class="float-hover"><a sveltekit:prefetch href="/about">About</a></li>
         </ul>
