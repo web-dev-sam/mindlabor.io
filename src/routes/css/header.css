@@ -1,15 +1,23 @@
-
 :root {
     --header-height: 5.625rem;
 }
 
-header {
+header.default-header {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     height: var(--header-height);
     width: 100%;
+    background: white;
+}
+
+header.home-header {
+    position: absolute;
+    top: 5vh;
+    left: 0;
+    height: var(--header-height);
+    width: 52%;
     background: white;
 }
 
@@ -20,10 +28,18 @@ nav {
     padding: 0 3rem;
 }
 
-ul {
+header.default-header ul {
     display: grid;
     height: inherit;
     grid-template-columns: 1fr 8fr repeat(3, 1fr);
+    margin: 0;
+    padding: 0;
+}
+
+header.home-header ul {
+    display: grid;
+    height: inherit;
+    grid-template-columns: 1fr 1fr repeat(2, 1fr);
     margin: 0;
     padding: 0;
 }
