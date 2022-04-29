@@ -1,5 +1,4 @@
 
 <svelte:head>
-	<title>About</title>
+	<title>About MindLabor</title>
 </svelte:head>
-

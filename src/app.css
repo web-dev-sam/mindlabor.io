@@ -8,9 +8,9 @@
     --font-title-2: 2.625rem;
     --font-title-3: 1.625rem;
     --font-subtitle: 1.625rem;
-    --font-body: 1rem;
+    --font-body: 1.25rem;
     --font-body-small: 0.75rem;
-    --font-button: 0.875rem;
+    --font-button: 1rem;
     --font-pretitle: 0.625rem;
 }
 
@@ -69,20 +69,30 @@ small {
     font-weight: 300;
 }
 
-button {
+button,
+.button {
+    display: block;
+    --height: calc(var(--font-button) * 3);
     font-size: var(--font-button);
-    height: calc(var(--font-button) * 3);
-    line-height: var(--font-button);
+    height: var(--height);
+    line-height: calc(var(--height) - 1.5rem);
     letter-spacing: 0.5px;
-    padding: 0.5rem 2rem;
-    width: 10rem;
+    padding: 0.75rem 2.5rem;
+    text-align: center;
+    margin: 0.5rem 0;
+    width: fit-content;
     border: none;
     cursor: pointer;
     background-color: var(--color-primary);
     color: white;
 }
 
-button:hover {
+.button {
+    text-decoration: none !important;
+}
+
+button:hover,
+.button:hover {
     opacity: 0.92;
 }
 
@@ -137,7 +147,7 @@ a:hover {
 p, a, span {
     font-size: var(--font-body);
     line-height: 140%;
-    letter-spacing: 0.5px;
+    letter-spacing: -1px;
 }
 
 button.btn-primary {

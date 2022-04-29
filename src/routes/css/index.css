@@ -1,6 +1,6 @@
 
 html {
-    font-size: 20px !important;
+    font-size: 24px !important;
 }
 
 main {
@@ -11,7 +11,7 @@ main {
 #hero {
     position: absolute;
     top: 25vh;
-    left: 14%;
+    left: 13%;
 }
 
 #hero > h1 {
@@ -21,20 +21,18 @@ main {
 
 #about {
     position: absolute;
-    width: 20%;
+    width: 30%;
     top: 110vh;
-    right: 16%;
+    right: 7.5%;
 }
 
 #about > p {
     max-width: 500px;
 }
 
-
-
 .bbox {
     width: 100%;
-    height: 197vh;
+    height: 193vh;
 }
 
 .purple-bbox-r,
@@ -136,6 +134,14 @@ main {
 .shape-8 {
     top: 170vh;
     right: 4%;
+}
+
+@media screen and (max-width: 1920px) {
+
+    html {
+        font-size: 20px !important;
+    }
+    
 }
 
 @media screen and (max-width: 1480px) {

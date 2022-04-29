@@ -17,13 +17,13 @@
 <section id="hero">
     <h1>Design & <br>Development</h1>
     <p>Creating web experiences with passion</p>
-    <button>Explore</button>
+    <a class="button">Explore</a>
 </section>
 
 <section id="about">
     <h2>About</h2>
     <p>I'm a passionate Web Developer who creates simple, accessible and minimal web experiences that your users will love.</p>
-    <button>Learn More</button>
+    <a class="button">Learn More</a>
 </section>
 
 <div class="bbox">
